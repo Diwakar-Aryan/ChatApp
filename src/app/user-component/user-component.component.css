@@ -1,0 +1,28 @@
+.user-details {
+  display: block;
+  margin: 1rem 1rem;
+  min-height: 70vh;
+  border: black 3px solid;
+  border-radius: 1em;
+  position: relative;
+}
+.action {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  display: flex;
+  text-align: end;
+  justify-content: center;
+}
+
+.btn {
+  text-align: center;
+  border: black 1px solid;
+  width: 7em;
+  height: 3em;
+  margin: 10px 20px;
+}
+
+.btn ::hover {
+  cursor: pointer;
+}

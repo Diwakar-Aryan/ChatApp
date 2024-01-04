@@ -1,0 +1,57 @@
+<div class="page">
+  <div class="container login" *ngIf="loginPage">
+    <div class="wrapper">
+      <form [formGroup]="loginForm" (ngSubmit)="login()">
+        <h2>Login</h2>
+        <div class="input-box">
+          <span class="icon"><mat-icon> email</mat-icon></span>
+          <input type="email" formControlName="user_email" required />
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><mat-icon>lock</mat-icon></span>
+          <input type="password" formControlName="password" required />
+          <label>Password</label>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox" />Remember Me</label>
+          <a href="#">Forgot Password ?</a>
+        </div>
+        <button type="submit">Login</button>
+        <div class="register-link">
+          <p>Don't have an account ? <a href="#">Register</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="container signUp" *ngIf="!loginPage">
+    <div class="wrapper">
+      <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
+        <h2>Sign Up</h2>
+        <div class="input-box">
+          <span class="icon"><mat-icon>Name</mat-icon></span>
+          <input type="text" formControlName="user_name" required />
+          <label>Name</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><mat-icon> email</mat-icon></span>
+          <input type="email" formControlName="user_email" required />
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><mat-icon>lock</mat-icon></span>
+          <input type="password" formControlName="password" required />
+          <label>Password</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><mat-icon>lock</mat-icon></span>
+          <input type="password" formControlName="confirmPassword" required />
+          <label>Confirm Password</label>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>

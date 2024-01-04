@@ -1,0 +1,10 @@
+<p>file-upload works!</p>
+
+<input type="file" (change)="fileChanged($event)" />
+<button (click)="getUrl()">Submit</button>
+
+<div>
+  List of uploaded files{{ fileList.length }}
+
+  <button *ngFor="let item of fileList" href="item.file_url" (click)="downloadFiles(item)">{{ item.file_name }}</button>
+</div>

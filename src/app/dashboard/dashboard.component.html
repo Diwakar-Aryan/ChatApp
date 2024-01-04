@@ -1,0 +1,27 @@
+<div class="nav-wrapper" *ngIf="isLoggedin">
+  <div class="grad-bar"></div>
+  <nav class="navbar">
+    <img
+      src="https://img.icons8.com/external-smashingstocks-detailed-outline-smashing-stocks/66/external-sharing-digital-marketing-smashingstocks-detailed-outline-smashing-stocks.png"
+      alt="Company Logo"
+    />
+
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="nav">
+      <li class="nav-item"><a href="#">Home</a></li>
+      <li class="nav-item"><a href="#">Services</a></li>
+      <li class="nav-item"><a href="#">About</a></li>
+      <li class="nav-item"><a href="#">Contact Us</a></li>
+      <li>
+        <mat-icon class="material-icons-outlined"> notifications </mat-icon>
+      </li>
+      <li>
+        <mat-icon routerLink="/user">account_circle</mat-icon>
+      </li>
+    </ul>
+  </nav>
+</div>
